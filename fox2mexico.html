@@ -1,8 +1,14 @@
 
 <html>
-<head><!-- Powered by Hooligan Media -->
-<link rel="preload" as="script" href="https://live.demand.supply/up.js">
-<script async data-cfasync="false" type="text/javascript" src="https://live.demand.supply/up.js"></script>
+<head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9W1ST79ETR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9W1ST79ETR');
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>ESPN HD</title>
 
@@ -128,7 +134,7 @@ body {
    
 
 // Define the string
-var string = 'https://colfut.github.io/colfutAPP/m3u8player.html?url=aHR0cHM6Ly9kMTdsZ2R4NHQ3YTRvZC5jbG91ZGZyb250Lm5ldC9vdXQvdjEvOTE0M2QxYjFlNDU0NDBiOTlmMWZkYzNhNmE1MGMyMTAvaW5kZXgubTN1OA==';
+var string = 'm3u8player.html?url=aHR0cHM6Ly9kMTdsZ2R4NHQ3YTRvZC5jbG91ZGZyb250Lm5ldC9vdXQvdjEvOTE0M2QxYjFlNDU0NDBiOTlmMWZkYzNhNmE1MGMyMTAvaW5kZXgubTN1OA==';
 
 // Encode the String
 var encodedString = btoa(string);
@@ -137,7 +143,7 @@ console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
 
 
 
-var source = "https://colfut.github.io/colfutAPP/repro.html?r="+encodedString;
+var source = "repro.html?r="+encodedString;
 
 
   var newFrameName = "hello";
@@ -216,5 +222,4 @@ function myFunction() {
     document.exitFullscreen();
   }
 }</script>
-
 </body></html>
