@@ -117,7 +117,28 @@ body {
     width: 115px;
   }
 </style>
+<script>
 
+  window.onload = function(){
+      // your code here
+   
+
+// Define the string
+var string = 'https://mondialo.pages.dev/playerid2.html?id=1037';
+
+// Encode the String
+var encodedString = btoa(string);
+console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+var source = "repro.html?r="+encodedString;
+
+  var newFrameName = "hello";
+  const iframe = document.getElementById("iframe");
+  $('iframe').attr('src',source ).reload;
+
+
+};
+
+</script>
 </head>
 
 <body>
@@ -138,7 +159,7 @@ body {
 <br>
 <br>
     <div class="video-container">Loading the player...
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true" allow="autoplay *; encrypted-media *;" name="iframe" src="https://kqa4ksy6oeygvk8viu7udq.on.drv.tw/player/jwcdn1.html?url=bGl2ZS9jM2Vkcy9DYXJ0b29uTmV0d29yay9TQV9MaXZlX2Rhc2hfZW5jXzJBL0NhcnRvb25OZXR3b3JrLm1wZA==&kid=ZDdkZjU2ZWZhYTM2YTcxMTQxZDIzODg1NGNjNDZkMWQ=&k=OGFiYjJlZTkxNTBkOGIyYWY4ZWJlYzBkZTBmODMzYzg=&lang=1" __idm_id__="14934017"></iframe>
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true" allow="autoplay *; encrypted-media *;" name="iframe" src="" __idm_id__="14934017"></iframe>
     </div>
 <br>
 <br/>
@@ -172,4 +193,7 @@ function myFunction() {
   }
 }</script>
 
-</body></html>
+
+<!-- Ezoic - under_page_title - under_page_title -->
+<div id="ezoic-pub-ad-placeholder-103"> </div>
+<!-- End Ezoic - under_page_title - under_page_title -->   </body></html>
